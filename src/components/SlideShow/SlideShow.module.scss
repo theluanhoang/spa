@@ -1,0 +1,31 @@
+$background-color: rgb(220,220,36, 0.7);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide-container {
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+

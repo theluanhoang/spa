@@ -1,0 +1,159 @@
+// CREATE VARIABLES
+$primary-color: #dcdc24;
+$background-color: rgb(220,220,36, 0.7);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 1);
+    // STYLE NAVBAR TOP CONTACT
+    &__top {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        padding: 1% 0;
+        border-bottom: 1px solid #EAEDEF;
+        &--contact {
+            display: flex;
+            cursor: pointer;
+            &Item {
+                display: flex;
+                align-items: center;
+                margin-right: 60px;
+                font-size: 14px;
+                margin-left: -30px;
+                color: #7B7F83;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            &Icon {
+                margin-right: 5px;
+                color: $primary-color;    
+                cursor: pointer;
+                width: 24px;
+            }
+        }
+
+        // STYLE NAVBAR TOP SOCIAL MEDIA
+
+        &--media {
+            display: flex;
+            justify-content: space-around;
+            &Item {
+                margin: 0 10px;
+            }
+        
+            &Icon {
+                color: #7B7F83;
+                &:hover {
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+        // STYLE NAVBAR TOP SEARCH
+
+        &--search {
+            position: relative;
+            width: 30%;
+            &Btn {
+                background-color: $primary-color;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                height: calc(100% + 1px);
+                width: 50px;
+                cursor: pointer;
+                border-bottom-right-radius: 100rem;
+                border-top-right-radius: 100rem;
+            }
+            &Icon {
+                display: inline-block;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                top: calc(50% - 12px);
+                color: #fff;
+            }
+            &Input {
+                height: 30px;
+                width: 400px;
+                border: none;
+                background-color: #f5f5f5;
+                padding: 1% 2% 1% 5%;
+                outline: none;
+                border-bottom-left-radius: 100rem;
+                border-top-left-radius: 100rem;
+            }
+        }
+    }
+
+    // STYLE NAVBAR BOTTOM 
+
+    &__bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &--logo img{
+            width: 100px;
+        }
+        &--categories {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            align-items: center;
+            transition: all ease-in-out 0.2s;
+            &Item a {
+                color: #43484E;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: $primary-color;
+                    transition: all ease-in-out 0.2s;
+                }
+            }
+        }
+    
+        &--btnBooking {
+            width: 150px;
+            height: 50px;
+            display: flex;
+            background-color: $primary-color;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #fff;
+            transition: all ease-in-out 0.1s;
+            &:hover {
+                transition: all ease-in-out 0.1s;
+                transform: scale(1.01);
+                background-color: rgba($color: $primary-color, $alpha: 0.8);
+            }
+        }
+    }
+}
+
+
+
+
+

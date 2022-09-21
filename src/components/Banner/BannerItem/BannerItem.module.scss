@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bannerItem {
+    width: 32%;
+    cursor: pointer;
+    &__media {
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+        &--image {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        &--overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            
+        }
+    }
+
+    &__desc {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(50% - 34px);
+        z-index: 1;
+        text-align: center;
+        &--title {
+            color: #fff;
+        }
+    }
+
+}
+
+.bannerItem__media:hover {
+    transition: all ease-in-out 0.2s;
+    transform: scale(1.01);
+}

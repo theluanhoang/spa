@@ -1,0 +1,56 @@
+$title-color: #43484E;
+$desc-color: #7B7D80;
+$primary-color: #dcdc24;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cardTag {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid #EAEDEF;
+    &__media {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        &--image {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.01);
+                transition: all ease-in-out 0.2s;
+            }
+        }
+    }
+    &__title {
+        color: $title-color;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    &__content {
+        color: $desc-color;
+        text-align: center;
+    }
+
+    &__btnSeeMore {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: $title-color;
+        margin: 10px 0;
+        cursor: pointer;
+        &:hover {
+            color: $primary-color;
+            transition: all ease-in-out 0.2s;
+        }
+    }
+}
+
+.paddingCard {
+    padding: 0 2%;
+}
