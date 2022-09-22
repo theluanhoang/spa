@@ -1,10 +1,15 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
-import { Background } from '../../assets/img';
-import { Icon1 } from '../../assets/img';
+import { Background, Background1, Icon1, Icon2, Icon5 } from '../../assets/img'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BannerDesc from '../Banner/BannerDesc';
+import Navbar from '../Navbar';
+import Slider from '../slider/Slider';
+import CardList from '../CardList';
+import BannerList from '../Banner';
+import ContactForm from '../Form/ContactForm';
 
 const cx = classNames.bind(styles);
 
@@ -13,20 +18,31 @@ function Home() {
         AOS.init();
     }, [])
     return (
-        <div className={cx('home__background')} data-aos='fade-up' data-aos-duration='2500'>
-            <img className={cx('home__background--image')} src={Background} alt='background' />
-            <div className={cx('home__content')}>
-                <div className={cx('home__content--block')}>
-                    <img className={cx('home__content--icon')} src={Icon1} alt='icon1' />
-                </div>
-                <h1 className={(cx('home__content--title'))}>
-                    Tận hưởng sự khác biệt
-                </h1>
-                <p className={(cx('home__content--desc'))}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Aster ipsum dolor Tur adipiscing elit, sed do eiusmod.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Aster ipsum dolor Tur adipiscing elit, sed do eiusmod.
-                </p>
-            </div>
+        <div className={cx('home')}>
+            <Navbar />
+            <Slider />
+            <BannerDesc
+                background={Background}
+                icon={Icon1}
+                title='Tận hưởng sự khác biệt'
+                content='
+                "Tuyết Beauty Spa" cung cấp các dịch vụ như điều trị nám, lỗ chân lông, sẹo rổ, tàn nhan. Với việc áp dụng trang thiết bị hiện đại kết hợp với đội ngũ nhân viên có chuyên môn cao, chúng tôi tin rằng sẽ làm hài lòng ngay cả vị khách khó tính nhất.
+                '
+            />
+            <CardList />
+            <BannerList />
+            <BannerDesc
+                background={Background1}
+                icon={Icon5}
+                title='Về chúng tôi'
+                content='
+                   "Tuyết Beauty Spa" là một địa điểm spa thích hợp để bạn ghé qua. Với đội ngũ nhân viên, kỹ thuật viên chuyên nghiệp. Chúng tôi hứa hẹn sẽ mang đến cho bạn những phút giây thư giãn tuyệt vời nhất. Với không gian thoải mái, "Tuyết Beauty Spa" được nhiều khách hàng đánh giá là địa điểm spa đáng để trải nghiệm cho người dân Đà Nẵng và du khách quốc tế. 
+                '
+                address={true}
+            />
+
+            <ContactForm />
+
         </div>
     )
 }

@@ -3,8 +3,6 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "../../slider-data";
 import styles from "./Slider.module.scss";
 import classNames from 'classnames/bind';
-import { Link } from 'react-router-dom';
-import { Logo } from '../../assets/img'
 
 const cx = classNames.bind(styles);
 
