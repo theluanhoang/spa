@@ -30,14 +30,15 @@ $background-color: #DCDC24;
         left: 20px;
         top: calc(50% - 300px);
         z-index: 2;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         padding: 2.5%;
         border-radius: 10px;
         &--title {
             font-family: 'Poppins', sans-serif;
             text-align: center;
             color: #43484E;
-            font-size: 48px;
+            font-size: 32px;
             margin: 2.5% 0;
         }
     }
@@ -75,6 +76,7 @@ $background-color: #DCDC24;
             color: #999;
             pointer-events: none;
             transition: all 0.25s ease-in-out;
+            display: block;
         }
         &--review {
             width: 98%;

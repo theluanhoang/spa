@@ -22,7 +22,7 @@ a {
     left: 0;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 1);
-    // STYLE NAVBAR TOP CONTACT
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     &__top {
         display: flex;
         justify-content: space-around;
@@ -123,6 +123,14 @@ a {
             width: 40%;
             align-items: center;
             transition: all ease-in-out 0.2s;
+            &Item {
+                position: relative;
+                &:hover .navbar__bottom--list{
+                    transform: scale(1);
+                    transition: all ease-in-out 0.2s;            transition: all ease-in-out 0.2s;
+
+                }
+            }
             &Item a {
                 color: #43484E;
                 display: flex;
@@ -132,6 +140,21 @@ a {
                     transition: all ease-in-out 0.2s;
                 }
             }
+        }
+        &--list {
+            position: absolute;
+            top: 25px;
+            padding: 10px 20px;
+            width: 200px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #fff;
+            line-height: 1.5;
+            transform: scale(0);
+            transition: all ease-in-out 0.2s;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
     
         &--btnBooking {

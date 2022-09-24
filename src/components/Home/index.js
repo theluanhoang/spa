@@ -1,8 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
-import { Background, Background1, Icon1, Icon2, Icon5 } from '../../assets/img'
-import AOS from 'aos';
+import { Background, Background1, Icon1, Icon5 } from '../../assets/img'
 import 'aos/dist/aos.css';
 import BannerDesc from '../Banner/BannerDesc';
 import Navbar from '../Navbar';
@@ -10,13 +9,12 @@ import Slider from '../slider/Slider';
 import CardList from '../CardList';
 import BannerList from '../Banner';
 import ContactForm from '../Form/ContactForm';
+import Footer from '../Footer';
 
 const cx = classNames.bind(styles);
 
 function Home() {
-    React.useEffect(() => {
-        AOS.init();
-    }, [])
+    
     return (
         <div className={cx('home')}>
             <Navbar />
@@ -42,7 +40,16 @@ function Home() {
             />
 
             <ContactForm />
-
+            <BannerDesc
+                background={Background1}
+                icon={Icon5}
+                title='Chào mừng đến với Tuyết Beauty Spa'
+                content='
+                   Đặt lịch của bạn ngay hôm nay 
+                '
+                address={false}
+            />
+            <Footer />
         </div>
     )
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './ContactForm.module.scss'
 import classNames from 'classnames/bind'
 import { BgrContact } from '../../../assets/img'
-import { AiOutlineSend } from 'react-icons/ai'
 
 const cx = classNames.bind(styles)
 

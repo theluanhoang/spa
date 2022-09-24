@@ -3,12 +3,12 @@ import classNames from 'classnames/bind'
 import styles from './BannerDesc.module.scss'
 const cx = classNames.bind(styles)
 
-function BannerDesc({ background, icon, title, content, address }) {
+function BannerDesc({ background, icon, title, content, address, animation }) {
 
     return (
-        <div className={cx('banner__background')} data-aos='fade-up' data-aos-duration='2500'>
+        <div className={cx('banner__background')}>
             <img className={cx('banner__background--image')} src={background} alt='background' />
-            <div className={cx('banner__content')}>
+            <div className={cx('banner__content')} >
                 <div className={cx('banner__content--block')}>
                     <img className={cx('banner__content--icon')} src={icon} alt='icon' />
                 </div>

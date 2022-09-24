@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2.5%;
+    display: flex;
+    border-top: solid 1px #AD8A48;
+    border-bottom: solid 1px #AD8A48;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer__item {
+    flex: 1;
+}
+
+.footer__item--title {
+    color: #AD8A48;
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.footer__item--info {
+    color: #43484E;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer__item--address {
+    background: url(../../assets/img/iconAdress.png) no-repeat left 3px;
+    padding-left: 30px;
+    background-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer__item--phone {
+    background: url(../../assets/img/phone.png) no-repeat left 3px;
+    padding-left: 30px;
+    background-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer__item--time {
+    background: url(../../assets/img/gio.png) no-repeat left 3px;
+    padding-left: 30px;
+    background-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer__item--email {
+    background: url(../../assets/img/mail.png) no-repeat left 3px;
+    padding-left: 30px;
+    background-size: 18px;
+}
+
+.footer__item--content {
+    color: #43484E;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer__item--social {
+    margin-top: 15px;
+    & span {
+        color: #7B7F83;
+        margin-left: 8px;
+        transition: 0.2s;
+
+        &:hover {
+            color: #dcdc24;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer__item--map {
+    & iframe {
+        width: 400px;
+        height: 300px;
+        border: none;
+    }
+}
