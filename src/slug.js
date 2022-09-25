@@ -1,7 +1,5 @@
 export const slug = {
-    
         triNam: 'dieu-tri-nam',
-    
         tanNhang: 'dieu-tri-tan-nhang',
         loChanLong: 'dieu-tri-lo-chan-long',
         moBung: 'giam-mo-vung-bung',

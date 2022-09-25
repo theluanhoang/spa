@@ -20,6 +20,7 @@ function BlogList() {
                     blogIcon={true}
                     time='24/09/2022'
                     duration='1000'
+                    url={`/blog/${slug.triNam}`}
                 />
 
 
@@ -30,6 +31,8 @@ function BlogList() {
                     blogIcon={true}
                     time='24/09/2022'
                     duration='1500'
+                    url={`/blog/${slug.loChanLong}`}
+
                 />
 
 
@@ -40,6 +43,8 @@ function BlogList() {
                     blogIcon={true}
                     time='24/09/2022'
                     duration='2000'
+                    url={`/blog/${slug.goiDau}`}
+
                 />
 
 
@@ -50,6 +55,8 @@ function BlogList() {
                     blogIcon={true}
                     time='24/09/2022'
                     duration='3500'
+                    url={`/blog/${slug.thaiChi}`}
+
                 />
 
 
@@ -61,6 +68,8 @@ Phương pháp này, sử dụng đầu kim nano siêu nhỏ để cấy tế b�
                     blogIcon={true}
                     time='24/09/2022'
                     duration='3000'
+                    url={`/blog/${slug.cayHongSam}`}
+
                 />
 
 
@@ -71,6 +80,8 @@ Phương pháp này, sử dụng đầu kim nano siêu nhỏ để cấy tế b�
                     blogIcon={true}
                     time='24/09/2022'
                     duration='2500'
+                    url={`/blog/${slug.seoRoV2}`}
+
                 />
 
 
@@ -81,6 +92,8 @@ Phương pháp này, sử dụng đầu kim nano siêu nhỏ để cấy tế b�
                     blogIcon={true}
                     time='24/09/2022'
                     duration='3500'
+                    url={`/blog/${slug.tanNhang}`}
+
                 />
 
 
@@ -91,6 +104,8 @@ Phương pháp này, sử dụng đầu kim nano siêu nhỏ để cấy tế b�
                     blogIcon={true}
                     time='24/09/2022'
                     duration='3000'
+                    url={`/blog/${slug.seoRo}`}
+
                 />
 
 
@@ -104,7 +119,7 @@ Mỗi người có 1 cơ thể khác nhau, cơ địa cũng khác nhau nên vi�
                     blogIcon={true}
                     time='24/09/2022'
                     duration='2500'
-                    slug={slug.moBung}
+                    url={`/blog/${slug.moBung}`}
                 />
             </div>
         </div>
