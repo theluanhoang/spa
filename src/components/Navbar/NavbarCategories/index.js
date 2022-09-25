@@ -36,31 +36,25 @@ function NavbarCategories() {
             <li className={cx('navbar__bottom--categoriesItem')}>
                 <Link to='/service'>
                     Dịch vụ
-                    <RiArrowDownSLine />
                 </Link>
-                <ul className={cx('navbar__bottom--list')}>
-                    <li className={cx('navbar__bottom--listItem')}>
-                        <Link to=''>
-                            Điều trị mụn
-                        </Link>
-                    </li>
-                    <li className={cx('navbar__bottom--listItem')}>
-                        <Link to='/albums'>
-                            Điều trị lỗ chân lông
-                        </Link>
-                    </li>
-                    <li className={cx('navbar__bottom--listItem')}>
-                        <Link to=''>
-                            Điều trị sẹo rổ
-                        </Link>
-                    </li>
-                </ul>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>
                 <Link to='/news'>
                     Tin tức
                     <RiArrowDownSLine />
                 </Link>
+                <ul className={cx('navbar__bottom--list')}>
+                    <li className={cx('navbar__bottom--listItem')}>
+                        <Link to='/promotion'>
+                            Khuyến mãi
+                        </Link>
+                    </li>
+                    <li className={cx('navbar__bottom--listItem')}>
+                        <Link to='/recruit'>
+                            Tuyển dụng và đạo tạo
+                        </Link>
+                    </li>
+                </ul>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>
                 <Link to='/contact'>
