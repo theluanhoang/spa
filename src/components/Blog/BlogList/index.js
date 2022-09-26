@@ -9,9 +9,6 @@ const cx = classNames.bind(styles);
 
 function BlogList() {
     
-
-
-    
     return (
         <div className={cx('blog')}>
             <div className={cx('blogList')}>
