@@ -102,8 +102,30 @@ a {
 
 .blog__center--contact {
     width: 80%;
-    height: 100px;
+    height: 150px;
     padding: 10px;
     border: 2px dotted $background-color;
     margin: 20px auto;
+}
+.blogItem__content--title {
+    text-align: center;
+    margin-top: 10px;
+}
+.contact__button {
+    width: 150px;
+    height: 50px;
+    background-color: $background-color;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease-in-out 0.2s;
+    &:hover {
+        background-color: $primary-color;
+        transition: all ease-in-out 0.2s;
+    }
 }

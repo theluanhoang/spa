@@ -4,12 +4,17 @@ import styles from './Card.module.scss'
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BiTime } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const cx = classNames.bind(styles);
 
-function CardTag({ image, title, content, blogIcon, time, url }) {
+function CardTag({ image, title, content, blogIcon, time, url, duration }) {
+    React.useEffect(() => {
+        AOS.init();
+    }, [])
     return (
-        <div className={cx('cardTag')}>
+        <div className={cx('cardTag')} data-aos='fade-left' data-aos-duration={duration}>
             <div className={cx('cardTag__media')}>
                 <img className={cx('cardTag__media--image')} src={image} alt='item1' />
                 {

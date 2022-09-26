@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ContactForm.module.scss'
 import classNames from 'classnames/bind'
 import { BgrContact } from '../../../assets/img'
+import InputTag from '../InputTag'
 
 const cx = classNames.bind(styles)
 
@@ -17,24 +18,12 @@ function ContactForm() {
                 <form className={cx('contactForm__form--form')}>
                     <div className={cx('contactForm__table')}>
                         <div className={cx('contactForm__table--row')}>
-                            <div className={cx('contactForm__table--field')}>
-                                <input className={cx('contactForm__table--input')} />
-                                <label for='name' className={cx('contactForm__table--label')}>Họ và tên</label>
-                            </div>
-                            <div className={cx('contactForm__table--field')}>
-                                <input className={cx('contactForm__table--input')} />
-                                <label for='address' className={cx('contactForm__table--label')}>Địa chỉ</label>
-                            </div>
+                            <InputTag label={'Họ và tên'} />
+                            <InputTag label={'Địa chỉ'} />
                         </div>
                         <div className={cx('contactForm__table--row')}>
-                            <div className={cx('contactForm__table--field')}>
-                                <input className={cx('contactForm__table--input')} />
-                                <label for='email' className={cx('contactForm__table--label')}>Email</label>
-                            </div>
-                            <div className={cx('contactForm__table--field')}>
-                                <input className={cx('contactForm__table--input')} />
-                                <label for='phoneNumber' className={cx('contactForm__table--label')}>Số điện thoại</label>
-                            </div>
+                            <InputTag label={'Email'}/>
+                            <InputTag label={'Số điện thoại'}/>
                         </div>
                         <div className={cx('contactForm__table--row')}>
                             <textarea
