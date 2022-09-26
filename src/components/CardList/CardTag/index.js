@@ -3,10 +3,11 @@ import classNames from 'classnames/bind';
 import styles from './Card.module.scss'
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BiTime } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function CardTag({ image, title, content, blogIcon, time }) {
+function CardTag({ image, title, content, blogIcon, time, url }) {
     return (
         <div className={cx('cardTag')}>
             <div className={cx('cardTag__media')}>
@@ -19,7 +20,7 @@ function CardTag({ image, title, content, blogIcon, time }) {
                     )
                 }
             </div>
-            
+
             <h1 className={cx(['cardTag__title', 'paddingCard'])}>
                 {title}
             </h1>
@@ -34,7 +35,9 @@ function CardTag({ image, title, content, blogIcon, time }) {
                 {content}
             </p>
             <div className={cx(['cardTag__btnSeeMore', 'paddingCard'])}>
-                Xem thêm <AiOutlineArrowRight />
+                <Link to={url}>
+                    Xem thêm <AiOutlineArrowRight />
+                </Link>
             </div>
         </div>
     )

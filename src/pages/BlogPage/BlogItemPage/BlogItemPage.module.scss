@@ -1,0 +1,109 @@
+$primary-color: #dcdc24;
+$desc-color: #7B7D80;
+$background-color: rgb(220,220,36, 0.7);
+$title-color: #43484E;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.blogItem {
+    margin-top: 175px;
+    &__content--title {
+        color: $title-color;
+        margin: 20px 0;
+        &V2 {
+            color: $title-color;
+        }
+    }
+    &__status {
+        width: 100%;
+        height: 50px;
+        padding: 2.5% 5%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ECECED;
+        margin-bottom: 30px;
+        color: $desc-color;
+        &--content {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__main {
+        width: 100%;
+        display: flex;
+    }
+    &__center {
+        width: 70%;
+        &--blog {
+            width: 100px;
+            height: 30px;
+            margin: 0 auto;
+            margin-top: 20px;
+            &Tag {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $primary-color;
+                padding: 2.5% 3%;
+                color: #fff;
+            }
+        }
+        &--title {
+            font-size: 48px;
+            color: $title-color;
+            text-align: center;
+            margin: 20px 0 10px 0;
+        }
+        &--media {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &--image {
+            width: 100%;
+        }
+        &--content {
+            width: 80%;
+            margin: 0 auto;
+            & p {
+                margin: 20px 0;
+                line-height: 1.5;
+                color: #7B7D80;
+                text-align: justify;
+            }
+        }
+    }
+    &__left {
+        width: 30%;
+        height: 50px;
+        background-color: #333;
+    }
+}
+
+a {
+    color: $primary-color;
+}
+
+.time {
+    margin-bottom: 3%;
+    color: #7B7D80;
+    font-size: 14px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog__center--contact {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border: 2px dotted $background-color;
+    margin: 20px auto;
+}

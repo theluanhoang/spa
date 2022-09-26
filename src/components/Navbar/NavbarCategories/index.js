@@ -45,6 +45,11 @@ function NavbarCategories() {
                 </Link>
                 <ul className={cx('navbar__bottom--list')}>
                     <li className={cx('navbar__bottom--listItem')}>
+                        <Link to='/blog'>
+                            Blog
+                        </Link>
+                    </li>
+                    <li className={cx('navbar__bottom--listItem')}>
                         <Link to='/promotion'>
                             Khuyến mãi
                         </Link>
