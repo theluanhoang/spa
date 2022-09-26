@@ -4,6 +4,7 @@ import './App.css'
 import MySpa from './pages/MySpa';
 import MenuPage from './pages/MenuPage';
 import PhotoLibrary from './pages/PhotoLibrary';
+import Contact from './pages/contact';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,8 @@ function App() {
         <Route path='/' element={<HomePage />}/>
         <Route path='/mySpa' element={<MySpa />}/>
         <Route path='/menu' element={<MenuPage />}/>
-        <Route path='/photo-library' element={<PhotoLibrary />}/>
+        <Route path='/albums' element={<PhotoLibrary />}/>
+        <Route path='/contact' element={<Contact />}/>
       </Routes>
     </div>
   );
