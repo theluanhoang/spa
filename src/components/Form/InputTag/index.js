@@ -4,10 +4,10 @@ import classNames from 'classnames/bind'
 
 const cx = classNames.bind(styles)
 
-function InputTag({label}) {
+function InputTag({label, width, borderColor}) {
     return (
-        <div className={cx('field')}>
-            <input className={cx('input')} />
+        <div className={cx('field')} style={{ width: `${width}` }}>
+            <input className={cx('input')} style={{ borderColor: `${borderColor}` }}/>
             <label for='name' className={cx('label')}>{label}</label>
         </div>)
 }

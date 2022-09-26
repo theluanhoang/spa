@@ -3,10 +3,12 @@ import classNames from "classnames/bind";
 import styles from "./Contact.module.scss";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import InputTag from '../../components/Form/InputTag'
 
 const cx = classNames.bind(styles);
 
 function Contact() {
+  
   return (
     <div>
       <Navbar />
@@ -37,12 +39,8 @@ function Contact() {
                 </div>
                 <p>Quý khách có thể liên hệ với chúng tôi bằng cách điền thông tin vào mẫu trên. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất hoặc gọi điện thoại để được tư vấn.</p>
                 <form>
-                    <div className={cx("form-group")}>
-                        <input type="text" placeholder="Họ và tên"/>
-                    </div>
-                    <div className={cx("form-group")}>
-                        <input type="text" placeholder="Số điện thoại"/>
-                    </div>
+                    <InputTag label={'Họ và tên'} width='100%' borderColor={'#ddd'}/>
+                    <InputTag label={'Số điện thoại'} width='100%' borderColor={'#ddd'}/>
                     <div className={cx("form-area")}>
                         <textarea type="text" placeholder="Nội dung"/>
                     </div>
