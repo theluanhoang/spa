@@ -7,13 +7,29 @@ import Navbar from '../../../components/Navbar'
 import Footer from '../../../components/Footer'
 import { BiTime } from 'react-icons/bi'
 import { NamDa } from '../../../assets/img'
+import { useDispatch, useSelector } from 'react-redux';
+import { showModal } from '../../../redux/actions';
+import {modalState$} from '../../../redux/selectors'
+import ModalBlogItem from '../../../components/Modal/ModalBlogItem'
+
 
 const cx = classNames.bind(styles)
 
 function BlogItemPage() {
+  const dispatch = useDispatch();
+
+  const openModal = React.useCallback(() => {
+    dispatch(showModal());
+  }, [dispatch]);
+
+  const {isShow} = useSelector(modalState$);
+
   return (
     <div className={cx('blogItem')}>
       <Navbar />
+      {
+        isShow && <ModalBlogItem />
+      }
       <div className={cx('blogItem__status')}>
         <div className={cx('blogItem__status--content')}>
           <Link to='/'>Trang chủ</Link>
@@ -75,8 +91,8 @@ function BlogItemPage() {
             <div className={cx('blog__contact--title')}>
               <h2 className={cx('blogItem__content--title')}>Trị nám tận gốc, không tái phát</h2>
             </div>
-            <div className={cx('contact__button')}>
-              <div className={cx('btnContact')}>Liên hệ ngay</div>
+            <div className={cx('contact__button')} onClick={openModal}>
+              <div className={cx('btnContact')} >Liên hệ ngay</div>
             </div>
           </div>
         </div>
