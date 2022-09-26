@@ -4,6 +4,7 @@ import './App.css'
 import MySpa from './pages/MySpa';
 import MenuPage from './pages/MenuPage';
 import PhotoLibrary from './pages/PhotoLibrary';
+import Contact from './pages/contact';
 import { slug } from './slug';
 import BlogItemPage from './pages/BlogPage/BlogItemPage'
 import BlogPage from './pages/BlogPage'
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/mySpa' element={<MySpa />}/>
+        <Route path='/contact' element={<Contact />}/>
         <Route path='/service' element={<MenuPage />}/>
         <Route path='/albums' element={<PhotoLibrary />}/>
         <Route path={`/blog/${slug.cayHongSam}`} element={<BlogItemPage />}/>

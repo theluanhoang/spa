@@ -19,7 +19,7 @@ function Footer() {
             <div className={cx("footer__item--address")}>
               137 Hải Hồ, Hải Châu, Đà Nẵng
             </div>
-            <div className={cx("footer__item--phone")}>+84 236 363 8888</div>
+            <div className={cx("footer__item--phone")}>+84 379 124 695</div>
             <div className={cx("footer__item--time")}>09:00 - 22:30</div>
             <div className={cx("footer__item--email")}>
               spacecenter@gmail.com

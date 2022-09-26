@@ -181,8 +181,8 @@ function PhotoLibrary() {
         <div className={cx("inner")}>
           <h2 className={cx("title")}>Thư viện ảnh</h2>
           <div className={cx("box-list")}>
-            {images.map(image => (
-                <ItemImg src={image.src} />
+            {images.map((image) => (
+                <ItemImg src={image.src}/>
             ))}
           </div>
         </div>
