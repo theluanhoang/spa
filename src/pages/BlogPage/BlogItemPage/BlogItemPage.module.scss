@@ -108,7 +108,6 @@ a {
     margin: 20px auto;
 }
 .blogItem__content--title {
-    text-align: center;
     margin-top: 10px;
 }
 .contact__button {
@@ -128,4 +127,8 @@ a {
         background-color: $primary-color;
         transition: all ease-in-out 0.2s;
     }
+}
+
+.center {
+    text-align: center;
 }
