@@ -4,5 +4,8 @@ export const INIT_STATE = {
     },
     slideShow: {
         toggle: false
+    },
+    navbar: {
+        turnNav: false 
     }
 }

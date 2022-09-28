@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
-import { Background, Background1, Icon1, Icon5 } from '../../assets/img'
+import { Background, Background1, BgrWhite, Icon1, Icon5 } from '../../assets/img'
 import 'aos/dist/aos.css';
 import BannerDesc from '../Banner/BannerDesc';
 import Navbar from '../Navbar';
@@ -10,17 +10,25 @@ import CardList from '../CardList';
 import BannerList from '../Banner';
 import ContactForm from '../Form/ContactForm';
 import Footer from '../Footer';
+import NavbarResponsive from '../Navbar/NavbarElement/NavbarResponsive';
+import { useSelector } from 'react-redux';
+import { navbarResState$ } from '../../redux/selectors';
 
 const cx = classNames.bind(styles);
 
 function Home() {
     
+    const { turnNav } = useSelector(navbarResState$);
+
     return (
         <div className={cx('home')}>
             <Navbar />
+            {
+                turnNav && <NavbarResponsive />
+            }
             <Slider />
             <BannerDesc
-                background={Background}
+                background={BgrWhite}
                 icon={Icon1}
                 title='Tận hưởng sự khác biệt'
                 content='
@@ -30,7 +38,7 @@ function Home() {
             <CardList />
             <BannerList />
             <BannerDesc
-                background={Background1}
+                background={BgrWhite}
                 icon={Icon5}
                 title='Về chúng tôi'
                 content='
@@ -41,7 +49,7 @@ function Home() {
 
             <ContactForm />
             <BannerDesc
-                background={Background1}
+                background={BgrWhite}
                 icon={Icon5}
                 title='Chào mừng đến với Tuyết Beauty Spa'
                 content='

@@ -84,3 +84,28 @@ $primary-color: rgb(220, 220, 36);
 .paddingCard {
     padding: 0 2%;
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .cardTag {
+        width: 80%;
+        &--image {
+            width: 100%;
+        }
+        &__content {
+            height: 100px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .cardTag {
+        width: 80%;
+        margin: 8% auto;
+        &--image {
+            width: 100%;
+        }
+        &__content {
+            height: 100px;
+        }
+    }
+}

@@ -10,4 +10,11 @@
     margin: 2.5% auto;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .cardList {
+        margin-top: 10%;
+    }
 }

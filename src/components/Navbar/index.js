@@ -5,6 +5,7 @@ import { useScroll } from '../../hooks/useScroll'
 
 // IMAGE Website
 import { NavbarTop, NavbarBottom } from './NavbarElement';
+import NavbarResponsive from './NavbarElement/NavbarResponsive';
 
 
 const cx = classNames.bind(styles)

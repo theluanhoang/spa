@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from '../Navbar.module.scss'
-import { Logo } from '../../../assets/img';
 import { Link } from 'react-router-dom';
 import { RiArrowDownSLine } from 'react-icons/ri'
 
@@ -16,7 +15,7 @@ function NavbarCategories() {
                 </Link>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>
-                <Link to='/introduce'>
+                <Link to=''>
                     Giới thiệu
                     <RiArrowDownSLine />
                 </Link>
@@ -39,7 +38,7 @@ function NavbarCategories() {
                 </Link>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>
-                <Link to='/news'>
+                <Link to=''>
                     Tin tức
                     <RiArrowDownSLine />
                 </Link>

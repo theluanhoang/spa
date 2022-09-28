@@ -137,3 +137,34 @@ $background-color: #DCDC24;
     color: $primary-color;
     transition: all 0.25s ease-in-out;
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .contactForm {
+        margin: 10% 0;
+        &__form {
+            width: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 30px;
+        }
+        &__image {
+            width: 200%;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .contactForm {
+        margin: 10% 0;
+        &__form {
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 30px;
+        }
+        
+        &__image {
+            width: 200%;
+        }
+    }
+}
