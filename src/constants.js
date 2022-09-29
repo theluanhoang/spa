@@ -7,5 +7,8 @@ export const INIT_STATE = {
     },
     navbar: {
         turnNav: false 
+    },
+    blogSearch: {
+        turnBlog: false
     }
 }
