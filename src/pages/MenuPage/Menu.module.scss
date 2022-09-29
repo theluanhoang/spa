@@ -80,3 +80,10 @@
     display: block;
     width: 40%;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .menu__box {
+        width: 115%;
+        margin-left: -25px;
+    }
+}

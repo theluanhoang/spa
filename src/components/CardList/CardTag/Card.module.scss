@@ -109,3 +109,15 @@ $primary-color: rgb(220, 220, 36);
         }
     }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+    .cardTag {
+        width: 80%;
+        margin: 8% auto;
+        &--image {
+            width: 100%;
+        }
+        &__content {
+            height: 100px;
+        }
+    }
+}

@@ -216,7 +216,7 @@ a {
             top: 0;
             bottom: 0;
             left: 0;
-            right: 40%;
+            right: 80%;
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 2;
             display: block;
@@ -228,7 +228,7 @@ a {
             top: 0;
             bottom: 0;
             right: 0;
-            width: 40%;
+            width: 80%;
             background-color: #fff;
             z-index: 1000;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -279,7 +279,7 @@ a {
                 display: none;
             }
             &--media {
-                margin-right: -115px;
+                margin-right: -70px;
             }
 
         }
@@ -332,6 +332,48 @@ a {
             }
             &--btnBooking {
                 display: none;
+            }
+        }
+        
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar {
+        &__top {
+            &--search {
+                display: none;
+            }
+            &--media {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                display: none;
+            }
+            &--contact {
+                display: none;
+            }
+            
+
+        }
+        &__bottom {
+            &--icon {
+                display: block;
+                font-size: 36px;
+                margin-right: -50px;
+                cursor: pointer;
+            }
+            &--categories {
+                display: none;
+            }
+            &--search {
+                display: none;
+                width: 45%;
+            }
+            &--btnBooking {
+                display: none;
+            }
+            &--logo {
+                margin-left: -80px;
             }
         }
         

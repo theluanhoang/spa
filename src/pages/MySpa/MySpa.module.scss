@@ -132,3 +132,83 @@ $desc-color: #7B7D80;
 
 .ver3 {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .mySpa {
+        &__information {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--content {
+                width: 90%;
+                margin: 8% auto;
+                &V2 {
+                    width: 90%;
+                    margin: 8% auto;
+                }
+            }
+            &--media {
+                width: 90%;
+            }
+
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .mySpa {
+        &__information {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--content {
+                width: 90%;
+                margin: 8% auto;
+                &V2 {
+                    width: 90%;
+                    margin: 8% auto;
+                }
+            }
+            &--media {
+                width: 90%;
+            }
+
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .mySpa {
+        &__information {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--content {
+                width: 90%;
+                margin: 8% auto;
+                &V2 {
+                    width: 90%;
+                    margin: 8% auto;
+                }
+            }
+            &--media {
+                width: 90%;
+            }
+
+
+        }
+        &__content {
+            &--image {
+                width: 150%;
+            }
+            &--overlay {
+                height: 375px;
+            }
+            &--desc {
+                width: 100%;
+                margin: 0 auto;
+                left: 0;
+                top: 0;
+            }
+        }
+        
+    }
+}

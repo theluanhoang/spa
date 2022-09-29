@@ -12,6 +12,15 @@ $title-color: #43484E;
 
 .blogItem {
     margin-top: 175px;
+    &__overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
     &__content--title {
         color: $title-color;
         margin: 20px 0;
@@ -20,6 +29,7 @@ $title-color: #43484E;
         }
     }
     &__status {
+        position: relative;
         width: 100%;
         height: 50px;
         padding: 2.5% 5%;
@@ -31,6 +41,9 @@ $title-color: #43484E;
         &--content {
             display: flex;
             align-items: center;
+        }
+        &--dot {
+            display: none;
         }
     }
     &__main {
@@ -209,5 +222,26 @@ a {
 
 .left {
     margin-left: 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .blogItem {
+        &__status {
+            &--dot {
+                display: block;
+                position: absolute;
+                right: 30px;
+            }
+        }
+        &__left {
+            display: none;
+        }
+        &__center {
+            width: 100%;
+        }
+    }
+    .blog__center--contact {
+        height: 200px;
+    }
 }
 

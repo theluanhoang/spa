@@ -168,3 +168,18 @@ $background-color: #DCDC24;
         }
     }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+    .contactForm {
+        margin: 10% 0;
+        &__form {
+            width: 99%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 30px;
+        }
+        
+        &__image {
+            width: 600%;
+        }
+    }
+}

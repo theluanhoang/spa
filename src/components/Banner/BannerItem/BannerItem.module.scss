@@ -84,3 +84,21 @@
         }
     }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+    .bannerItem {
+        width: 80%;
+        margin: 3% auto;
+        border-radius: 10px;
+        &__media {
+            border-radius: 10px;
+        }
+        &__desc {
+            &--title {
+                color: #fff;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

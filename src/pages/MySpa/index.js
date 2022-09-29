@@ -4,13 +4,18 @@ import classNames from 'classnames/bind'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import BannerDesc from '../../components/Banner/BannerDesc'
-import { Background, Background1, Banner, Banner1, Banner4, Icon5, Item1 } from '../../assets/img'
+import { Background, Background1, Banner, Banner1, Banner4, BgrWhite, Icon5, Item1 } from '../../assets/img'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useSelector } from 'react-redux';
+import { navbarResState$ } from '../../redux/selectors';
+import NavbarResponsive from '../../components/Navbar/NavbarElement/NavbarResponsive'
 
 const cx = classNames.bind(styles)
 
 function MySpa() {
+    const { turnNav } = useSelector(navbarResState$);
+
 
     React.useEffect(() => {
         AOS.init();
@@ -19,9 +24,12 @@ function MySpa() {
     return (
         <div className={cx('mySpa')}>
             <Navbar />
+            {
+                turnNav && <NavbarResponsive />
+            }
             <div className={cx('mySpa__content')}>
                 <BannerDesc
-                    background={Background}
+                    background={BgrWhite}
                     icon={Icon5}
                     title='Về chúng tôi'
                     content='
@@ -53,7 +61,7 @@ function MySpa() {
                     <div className={cx('mySpa__content--overlay')}></div>
                 </div>
                 <div className={cx('mySpa__information')}>
-                    <div className={cx('mySpa__information--content')} data-aos='fade-right' data-aos-duration='1500'>
+                    <div className={cx('mySpa__information--content')} data-aos='fade-right' data-aos-duration='2500'>
                         <h1 className={cx('mySpa__information--title')}>TUYẾT BEAUTY SPA</h1>
                         <p>
                             Được đầu tư cơ sở vật chất khang trang, hiện đại và đa dạng,... Chúng tôi tự tin đem đến cho khách hàng sự hài lòng bởi phương pháp và công nghệ trị liệu độc đáo, vô cùng hiệu quả trong quá trình chăm sóc sức khỏe và sắc đẹp.
@@ -68,7 +76,7 @@ function MySpa() {
                     <div className={cx('mySpa__information--media')}>
                         <img src={Item1} alt='banner' className={cx('mySpa__information--image')} />
                     </div>
-                    <div className={cx('mySpa__information--contentV2')} data-aos='fade-left' data-aos-duration='1500'>
+                    <div className={cx('mySpa__information--contentV2')} data-aos='fade-left' data-aos-duration='2500'>
                         <p>
                             Ngoài các gói điều trị nám, lỗ chân lông, tàn nhan,...<span className={cx('tuyetBeautySpa')}>"TUYẾT BEAUTY SPA"</span> còn có các gói dịch vụ chăm sóc da từ cơ bản đến chuyên sâu, tiêm filer 1cc cho tất cả các vùng, tiêm thon hàm, thon cơ tay lực sĩ...
                         </p>
@@ -76,7 +84,7 @@ function MySpa() {
                 </div>
 
                 <div className={cx('mySpa__information')}>
-                    <div className={cx(['mySpa__information--content', 'ver3', 'marginTop'])} data-aos='zoom-in' data-aos-duration='1500'>
+                    <div className={cx(['mySpa__information--content', 'ver3', 'marginTop'])} data-aos='zoom-in' data-aos-duration='2500'>
                         <p>
                             Yếu tố đặc biệt quan trọng tạo nên một <span className={cx('tuyetBeautySpa')}>"TUYẾT BEAUTY SPA"</span> uy tín chính từ đội ngũ nhân viên, kỹ thuật viên tại <span className={cx('tuyetBeautySpa')}>"TUYẾT BEAUTY SPA"</span> luôn nồng hậu, nhiệt tình, không ngừng cập nhật, trau chuốt các phương pháp, thiết bị máy móc và cẩn trọng trong từng quy trình dịch vụ giúp khách hàng tận hưởng nhiều dịch vụ tốt nhất và cmar nhận được sự kỳ diệu về sức khỏe sắc đẹp của mình.
                         </p>
@@ -87,7 +95,7 @@ function MySpa() {
                 </div>
             </div>
             <BannerDesc
-                background={Background1}
+                background={BgrWhite}
                 icon={Icon5}
                 content='
                    Hãy để "TUYẾT BEAUTY SPA" quan tâm và yêu thương bạn nhiều hơn. Với slogan "Sắc đẹp là vĩnh cửu", "TUYẾT BEAUTY SPA" sẽ không ngừng nỗ lực hoàn thiện, kết hợp đa dạng các loại hình dịch vụ chăm sóc sức khỏe và làm đẹp toàn diện bằng các phương pháp trị liệu truyền thống hiệu quả đến các hệ thống thiết bị làm đẹp công nghệ cao hiện đại bậc nhất.

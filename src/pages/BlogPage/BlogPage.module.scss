@@ -16,9 +16,9 @@ $background-color: rgb(220,220,36, 0.7);
     &__overlay {
         position: absolute;
         top: 0;
-        bottom: 0;
+        height: 100%;
         left: 0;
-        right: 0;
+        width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
     }
     &__title {
@@ -65,5 +65,29 @@ $background-color: rgb(220,220,36, 0.7);
     &:hover {
         transition: all ease-in-out 0.25s;
         background-color: #b7b713;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .blog__banner {
+        width: 100%;
+        margin-top: 125px;
+        overflow: visible;
+        img {
+            width: 116%;
+            margin: 0 auto; 
+        }
+    }
+    .blog__overlay {
+        height: 290px;
+        width: 116%;
+    }
+    .blog__title {
+        top: 60px;
+        left: calc(50% + 20px);
+    }
+    .blog__list {
+        margin-top: -300px;
+        margin-left: 50px;
     }
 }

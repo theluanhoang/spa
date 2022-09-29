@@ -158,3 +158,27 @@ $primary-color: #dcdc24;
     top: 60%;
   }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .slider {
+    height: 550px;
+  }
+  .content {
+    margin-top: -150px;
+    margin-left: -80px;
+    width: 100%;
+  }
+  .next, .prev {
+    top: 60%;
+    color: #dcdc24;
+  }
+  .next {
+    right: 5px;
+  }
+  .prev {
+    left: 5px;
+  }
+  .slide img {
+    width: 500px;
+    margin-top: 125px;
+  }
+}

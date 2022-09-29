@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames/bind'
 import styles from './BannerDesc.module.scss'
+import { AiOutlineMail, AiFillPhone } from 'react-icons/ai'
 const cx = classNames.bind(styles)
 
 function BannerDesc({ background, icon, title, content, address, animation }) {
@@ -30,13 +31,13 @@ function BannerDesc({ background, icon, title, content, address, animation }) {
                                     137 Hải Hồ - Hải Châu
                                 </p>
                                 <span className={cx('banner__address--contact')}>
-                                    Email: <p className={cx('banner__address--district')}>spacecenter@gmail.com</p>
+                                    <AiOutlineMail />: <p className={cx('banner__address--district')}>spacecenter@gmail.com</p>
                                 </span>
                                 <span className={cx('banner__address--contact')}>
-                                    Số điện thoại: <p className={cx('banner__address--district')}>(+84) 379 124 695</p>
+                                    <AiFillPhone />: <p className={cx('banner__address--district')}>(+84) 379 124 695</p>
                                 </span>
                             </div>
-                            
+
                         </div>
                     )
                 }
