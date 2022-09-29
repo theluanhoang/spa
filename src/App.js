@@ -26,7 +26,7 @@ function App() {
         <Route path={`/blog/${slug.tanNhang}`} element={<BlogItemPage data={data[0].tanNhang} />}/>
         <Route path={`/blog/${slug.thaiChi}`} element={<BlogItemPage data={data[0].thaiChi} />}/>
         <Route path={`/blog/${slug.triNam}`} element={<BlogItemPage data={data[0].triNam} />}/>
-        <Route path={`/blog`} element={<BlogPage />}/>
+        <Route path={`/news`} element={<BlogPage />}/>
       </Routes>
     </div>
   );

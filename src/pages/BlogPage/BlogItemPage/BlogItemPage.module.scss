@@ -224,7 +224,7 @@ a {
     margin-left: 0;
 }
 .hide {
-    display: none;
+    display: block;
 }
 
 
@@ -236,6 +236,9 @@ a {
         right: 20px;
         font-size: 32px;
         color: #7B7D80;
+    }
+    .hide {
+        display: none;
     }
     .blogItem {
         &__status {
@@ -343,6 +346,9 @@ a {
         right: 20px;
         font-size: 32px;
         color: #7B7D80;
+    }
+    .hide {
+        display: none;
     }
     .blogItem {
         &__status {
@@ -453,6 +459,9 @@ a {
         right: 20px;
         font-size: 32px;
         color: #7B7D80;
+    }
+    .hide {
+        display: none;
     }
     .blogItem {
         &__status {
