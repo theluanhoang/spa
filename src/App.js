@@ -8,6 +8,7 @@ import Contact from './pages/contact';
 import { slug, data } from './slug';
 import BlogItemPage from './pages/BlogPage/BlogItemPage';
 import BlogPage from './pages/BlogPage';
+import ReviewPage from './pages/reviewPage';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<HomePage />}/>
         <Route path='/mySpa' element={<MySpa />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/reviews' element={<ReviewPage />}/>
         <Route path='/service' element={<MenuPage />}/>
         <Route path='/albums' element={<PhotoLibrary />}/>
         <Route path={`/blog/${slug.cayHongSam}`} element={<BlogItemPage data={data[0].cayHongSam}/>}/>

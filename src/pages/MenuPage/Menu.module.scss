@@ -39,7 +39,7 @@
 
 
         & span {
-            width: 15.3%;
+            width: 19.3%;
             text-align: center;
             font-weight: 800;
             align-items: center;
@@ -60,7 +60,7 @@
     & span {
         align-items: center;
         padding-inline: 5px;
-        width: 16%;
+        width: 19%;
         color: #111;
         display: flex;
         justify-content: center;
@@ -74,6 +74,10 @@
     &:hover {
         background-color: #dcdc24;
     }
+
+    & .course {
+        width: 39%;
+    }
 }
 
 .menu-list>span:first-child {
@@ -86,4 +90,27 @@
         width: 115%;
         margin-left: -25px;
     }
+}
+
+@media (max-width: 740px) {
+    .content {
+        font-size: 14px;
+    }
+  
+    .menu-list {
+        & span {
+            width: 24.3%;
+        }
+
+        &  .course {
+            width: 51%;
+        }
+    }
+    .menu-cate {
+        & span {
+            width: 22.3% !important;
+        }
+    }
+
+   
 }

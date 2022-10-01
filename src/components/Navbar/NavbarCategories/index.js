@@ -61,7 +61,7 @@ function NavbarCategories() {
                 </ul>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>
-                <Link to='/contact'>
+                <Link to='/reviews'>
                     Nhận xét
                 </Link>
             </li>

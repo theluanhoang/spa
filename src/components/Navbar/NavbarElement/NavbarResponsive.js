@@ -49,7 +49,7 @@ function NavbarResponsive() {
                 </Link>
             </li>
             <li className={cx('navbar__responsive--categoriesItem')}>
-                <Link to='/contact'>
+                <Link to='/reviews'>
                     Nhận xét
                 </Link>
             </li>

@@ -97,12 +97,12 @@ function MenuPage() {
                   <li className={cx("menu-list")}>
                     <span>Điều trị nám</span>
                     <span>-</span>
-                    <span style={{ width: "32%" }}>Theo liệu trình</span>
+                    <span className={cx('course')}>Theo liệu trình</span>
                   </li>
                   <li className={cx("menu-list")}>
                     <span>Điều trị rỗ</span>
                     <span>-</span>
-                    <span style={{ width: "32%" }}>Theo liệu trình</span>
+                    <span className={cx('course')}>Theo liệu trình</span>
                   </li>
                   <li className={cx("menu-list")}>
                     <span>Cấy hồng sâm căng bóng</span>
@@ -143,7 +143,7 @@ function MenuPage() {
                   <li className={cx("menu-list")}>
                     <span>Điều trị phi kim sẹo rỗ 4.0</span>
                     <span>-</span>
-                    <span style={{ width: "32%" }}>Theo liệu trình</span>
+                    <span className={cx('course')}>Theo liệu trình</span>
                   </li>
                   <li className={cx("menu-list")}>
                     <span>Cấy trắng căng bóng baby skin</span>
@@ -164,7 +164,7 @@ function MenuPage() {
                   <li className={cx("menu-list")}>
                     <span>Điều trị lỗ chân lông to</span>
                     <span>-</span>
-                    <span style={{ width: "32%" }}>Theo liệu trình</span>
+                    <span className={cx('course')}>Theo liệu trình</span>
                   </li>
                   <li className={cx("menu-list")}>
                     <span>Gội đầu dưỡng sinh</span>
