@@ -10,3 +10,5 @@ export const turnOnNavbar = createAction('TURN_ON_NAVBAR');
 export const turnOffNavbar = createAction('TURN_OFF_NAVBAR');
 export const showSlideImage = createAction('SHOW_SLIDE_IMAGE');
 export const hideSlideImage = createAction('HIDE_SLIDE_IMAGE');
+export const turnOnBlog = createAction('TURN_ON_BLOG');
+export const turnOffBlog = createAction('TURN_OFF_BLOG');

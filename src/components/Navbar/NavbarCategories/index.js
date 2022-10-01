@@ -38,27 +38,10 @@ function NavbarCategories() {
                 </Link>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>
-                <Link to=''>
+                <Link to='/news'>
                     Tin tức
                     <RiArrowDownSLine />
                 </Link>
-                <ul className={cx('navbar__bottom--list')}>
-                    <li className={cx('navbar__bottom--listItem')}>
-                        <Link to='/blog'>
-                            Blog
-                        </Link>
-                    </li>
-                    <li className={cx('navbar__bottom--listItem')}>
-                        <Link to='/promotion'>
-                            Khuyến mãi
-                        </Link>
-                    </li>
-                    <li className={cx('navbar__bottom--listItem')}>
-                        <Link to='/recruit'>
-                            Tuyển dụng và đạo tạo
-                        </Link>
-                    </li>
-                </ul>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>
                 <Link to='/reviews'>
