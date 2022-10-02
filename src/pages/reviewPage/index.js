@@ -21,57 +21,51 @@ function ReviewPage() {
           <div className={cx("inner")}>
             <div className={cx("box-list")}>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Nguyễn Yến Ly</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Chúng tôi yêu thời gian của chúng tôi ở đây tại spa tuyệt vời của bạn. Một nơi đặc biệt với sự chú ý đặc biệt đến từng chi tiết.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>25 / 8 / 2021</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Phạm Ngọc Như</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Cảm ơn bạn! Chúng tôi đã có một khoảng thời gian tuyệt vời tại spa của bạn. Bạn thật đáng quý.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>27 / 10 / 2021</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Nguyễn Vân Anh</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Tôi đã cảm thấy được chào đón và đặc biệt vì những nụ cười chào đón và lòng tốt. Chúng tôi sẽ sớm quay lại.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>14 / 1 / 2022</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Lê Quỳnh Châu</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Dịch vụ hoàn hảo và nhân viên là những người tốt nhất mà chúng tôi từng gặp.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>19 / 2 / 2019</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Nguyễn Lan Anh</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Liệu pháp mát-xa TỐT NHẤT mà tôi từng có, tôi có thể sẽ trở lại nhiều lần.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>21 / 4 / 2019</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Đỗ Mai Sương</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Cơ sở vật chất hiện đại, mát-xa rất mạnh mẽ và thú vị! Tôi sẽ giới thiệu cho nhiều người!”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>29 / 5 / 2022</p>
               </div>
             </div>
             <div className={cx("message")}>
               <h3>
-              “Great service and they had everything I needed. What a great family owned business! I will be coming here for all my pool needs.”
+              “Dịch vụ tuyệt vời và họ có mọi thứ tôi cần. Thật là một doanh nghiệp thuộc sở hữu của một gia đình tuyệt vời! Tôi sẽ đến đây vì tất cả các nhu cầu về làm đẹp của tôi.”
               </h3>
             </div>
             <div className={cx("team-member")}>
@@ -80,58 +74,52 @@ function ReviewPage() {
             </div>
             <div className={cx("box-list", "box-list__bottom")}>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Lê Hồng Anh</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Mọi thứ đều rất tốt, dịch vụ tuyệt vời, khuôn mặt của tôi rạng rỡ và tôi cảm thấy tốt hơn rất nhiều.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>24 / 6 / 2022</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Nguyễn Diệu My</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Chắc chắn là trải nghiệm spa tốt nhất của tôi cho đến nay và tôi chắc chắn sẽ cố gắng trở lại sớm.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>13 / 7 / 2022</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Lê Phương Linh</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Trải nghiệm tuyệt vời. Mỗi lần mát-xa tôi nhận được ở đây đều tuyệt vời. Tôi cảm thấy thư thái hơn kể từ khi bước vào môi trường này.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>15 / 7 / 2022</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Trần Thanh Bình</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Nơi tuyệt vời. Dịch vụ khách hàng và cơ sở vật chất quá tốt. Một cách tuyệt vời để dành một giờ trong ngày của tôi.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>19 / 8 / 2022</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Nguyễn Mỹ Linh</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Giá cả phải chăng, nhân viên chuyên nghiệp, spa rất tốt.”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>25 / 8 / 2022</p>
               </div>
               <div className={cx("box-item")}>
-                <h4>Harry Truman</h4>
+                <h4>Lê Diệu Linh</h4>
                 <p>
-                  “We have enjoyed our stay here very well, after 1 week family
-                  travelling. We will definitely visit again.”
+                  “Mọi thứ đều hoàn hảo. Sẽ sớm quay lại sau !”
                 </p>
-                <p className={cx("box-item__date")}>25 / 8 / 2019</p>
+                <p className={cx("box-item__date")}>27 / 8 / 2022</p>
               </div>
             </div>
             <div className={cx("invitation")}>
-              <h2>Welcome to Rela</h2>
-              <h2>Book Your Stay Today.</h2>
-              <div className={cx("invitation__book")}>BOOK AN APPOINTMENT</div>
+              <h2>Chào mừng bạn đến với Tuyết beauty spa</h2>
+              <h2>Đặt phòng của bạn ngay hôm nay.</h2>
+              <div className={cx("invitation__book")}>ĐẶT LỊCH HẸN</div>
             </div>
           </div>
         </div>

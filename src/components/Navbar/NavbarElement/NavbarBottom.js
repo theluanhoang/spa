@@ -25,7 +25,9 @@ function NavbarBottom() {
             </div>
             <NavbarCategories />
             <div className={cx('navbar__bottom--btnBooking')}>
-                Đặt lịch ngay
+                <Link to='/contact' className={cx('btnBooking__link')}>
+                    Đặt lịch ngay
+                </Link>
             </div>
             <div className={cx('navbar__bottom--search')}>
                 <input type='text' placeholder='Nhập từ khóa ...' className={cx('navbar__bottom--searchInput')} />

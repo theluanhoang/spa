@@ -226,12 +226,15 @@ a {
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            color: #fff;
             transition: all ease-in-out 0.1s;
             &:hover {
                 transition: all ease-in-out 0.1s;
                 transform: scale(1.01);
                 background-color: rgba($color: $primary-color, $alpha: 0.8);
+            }
+
+            & .btnBooking__link {
+                color: #fff;
             }
         }
 

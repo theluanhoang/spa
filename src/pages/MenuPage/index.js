@@ -77,12 +77,6 @@ function MenuPage() {
                     <span>9$</span>
                   </li>
                   <li className={cx("menu-list")}>
-                    <span>Điện di Vitamin C trắng sáng</span>
-                    <span>-</span>
-                    <span>200.000</span>
-                    <span>9$</span>
-                  </li>
-                  <li className={cx("menu-list")}>
                     <span>Cấy tảo soắn săn chắc da</span>
                     <span>-</span>
                     <span>250.000</span>
@@ -326,12 +320,6 @@ function MenuPage() {
                     <span>-</span>
                     <span>8.000.000</span>
                     <span>290$</span>
-                  </li>
-                  <li className={cx("menu-list")}>
-                    <span>Xóa nhăn bằng Botox 1 vùng</span>
-                    <span>-</span>
-                    <span>4.000.000</span>
-                    <span>170$</span>
                   </li>
                   <li className={cx("menu-list")}>
                     <span>Xóa nhăn bằng Botox 1 vùng</span>
