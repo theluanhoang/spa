@@ -85,6 +85,22 @@
     width: 40%;
 }
 
+.menu-list__espec.menu-list{
+    display: block;
+    & .menu-list__espec--item {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+
+        & span:first-child {
+            width: 40%;
+        }
+    }
+    .menu-list__msg {
+        text-align: center;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     .menu__box {
         width: 115%;

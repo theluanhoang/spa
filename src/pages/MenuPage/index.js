@@ -181,6 +181,15 @@ function MenuPage() {
                     <span>600.000</span>
                     <span>26$</span>
                   </li>
+                  <li className={cx("menu-list", "menu-list__espec")}>
+                    <div className={cx("menu-list__espec--item")}>
+                      <span>Tắm trắng phi thuyền hông ngoại</span>
+                      <span>-</span>
+                      <span>600.000</span>
+                      <span>26$</span>
+                    </div>
+                    <div className={cx('menu-list__msg')}>(Liệu trình 8 lần 3 buổi chăm sóc da)</div>
+                  </li>
                   <li className={cx("menu-list")}>
                     <span>Tẩy tế bào chết + Tắm dưỡng body</span>
                     <span>-</span>
