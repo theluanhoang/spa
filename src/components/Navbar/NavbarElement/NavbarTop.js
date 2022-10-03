@@ -16,10 +16,10 @@ function NavbarTop() {
         <div className={cx('navbar__top')}>
             <ul className={cx('navbar__top--contact')}>
                 <li className={cx('navbar__top--contactItem')} >
-                    <BsFillTelephoneFill className={cx('navbar__top--contactIcon')} style={{ width: '24px', height: '24px' }} /> (+84) 379 124 695
-                </li>
+                    <BsFillTelephoneFill className={cx('navbar__top--contactIcon')} style={{ width: '24px', height: '24px' }} /> (+84) 905 166 941
+                </li> 
                 <li className={cx('navbar__top--contactItem')} >
-                    <AiTwotoneMail className={cx('navbar__top--contactIcon')} style={{ width: '24px', height: '24px' }} /> spacecenter@gmail.com
+                    <AiTwotoneMail className={cx('navbar__top--contactIcon')} style={{ width: '24px', height: '24px' }} /> tuyetbeautyspa@gmail.com
                 </li>
             </ul>
             <div className={cx('navbar__top--search')}>

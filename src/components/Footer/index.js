@@ -14,13 +14,13 @@ function Footer() {
     <div className={cx("wrapper")}>
       <div className={cx("footer")}>
         <div className={cx("footer__item")}>
-          <div className={cx("footer__item--title")}>SPACECENTER</div>
+          <div className={cx("footer__item--title")}>TUYẾT BEAUTY SPA</div>
           <div className={cx("footer__item--info")}>
             <div className={cx("footer__item--address")}>
               137 Hải Hồ, Hải Châu, Đà Nẵng
             </div>
-            <div className={cx("footer__item--phone")}>+84 379 124 695</div>
-            <div className={cx("footer__item--time")}>09:00 - 22:30</div>
+            <div className={cx("footer__item--phone")}>(+84) 905 166 941</div>
+            <div className={cx("footer__item--time")}>09:00 - 22:00</div>
             <div className={cx("footer__item--email")}>
               spacecenter@gmail.com
             </div>

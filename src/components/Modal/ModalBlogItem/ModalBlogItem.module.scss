@@ -80,3 +80,33 @@ $title-color: #43484E;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .modalBlogItem {
+        &__container {
+            width: 90%;
+            height: 58%;
+            margin-top: -10%;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .modalBlogItem {
+        &__container {
+            width: 60%;
+            height: 45%;
+            margin-top: 15%;
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .modalBlogItem {
+        &__container {
+            width: 70%;
+            height: 45%;
+            margin-top: 18%;
+        }
+    }
+}

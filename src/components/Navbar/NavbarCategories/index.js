@@ -40,7 +40,6 @@ function NavbarCategories() {
             <li className={cx('navbar__bottom--categoriesItem')}>
                 <Link to='/news'>
                     Tin tức
-                    <RiArrowDownSLine />
                 </Link>
             </li>
             <li className={cx('navbar__bottom--categoriesItem')}>

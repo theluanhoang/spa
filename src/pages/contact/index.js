@@ -50,7 +50,7 @@ function Contact() {
                 <div className={cx("form-area")}>
                   <textarea type="text" placeholder="Nội dung" />
                 </div>
-                <div >
+                <div>
                   <input type="submit" className={cx('info-user__btn')} value="Đăng ký" />
                 </div>
               </form>
